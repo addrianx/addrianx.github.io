@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,300&display=swap"); /* variable */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.bg-transparent {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.z-index-99 {
+  z-index: 99 !important;
+}
+
+.btn-orange-outline {
+  border: 2px solid orange;
+  background: transparent;
+  color: #91733B;
+}
+.btn-orange-outline:hover {
+  color: white;
+  background: orange;
+}
+
+.fab,
+.fas {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.fab:hover {
+  color: #686868;
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+p.lead {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+body {
+  background: #0a192f;
+}
+
+.navbar {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.navbar .navbar-brand {
+  color: rgb(255, 255, 255);
+}
+.navbar.bg-grey {
+  background-color: rgba(128, 128, 128, 0.329);
+}
+.navbar ul.navbar-nav li.nav-item {
+  padding: 10px;
+}
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  border-radius: 0px;
+  padding: 4rem 1.3rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  top: 0;
+  height: 100%;
+}
+.jumbotron.my-name h2.my-name-text {
+  line-height: 2;
+}
+.jumbotron.my-name p.about-my-name {
+  color: #4F4F4F;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.jumbotron.my-name .my-description p {
+  font-size: 0.9rem;
+}
+.jumbotron.my-name p.glow-green {
+  color: #64ffda;
+  font-size: 16px;
+}
+.jumbotron span.quotes {
+  font-style: italic;
+}
+.jumbotron h3 {
+  color: #6e6e6e;
+}
+.jumbotron p {
+  font-size: 14px;
+}
+
+.jumbotron-container {
+  margin-top: 1rem;
+}
+
+/*SECTION SKILL*/
+section.skill h4 {
+  text-transform: uppercase;
+  color: white;
+}
+section.skill .list-skills ul {
+  list-style: none;
+  display: inline-block;
+  padding-left: 15px;
+}
+section.skill .list-skills ul li {
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+}
+section.skill .list-skills ul li .btn-skills {
+  background-image: linear-gradient(to right, #0a192f, #0a192f 50%, #fff 50%);
+  background-size: 200% 100%;
+  border: 1px solid white;
+  font-size: 13px;
+  border-radius: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-position 0.4s ease-in-out;
+}
+section.skill .list-skills ul li .btn-skills:hover {
+  background: white;
+  color: rgb(151, 151, 151);
+  background-position: 100% 0;
+}
+
+.slide-option {
+  display: flex;
+  flex-flow: nowrap;
+  overflow-x: scroll;
+  padding-bottom: 0.7rem;
+  padding-top: 1rem;
+}
+.slide-option .logo-skill {
+  border: 2px solid grey;
+}
+.slide-option::-webkit-scrollbar, .slide-option::-moz-scrollbar {
+  display: none;
+}
+
+/* PORTFOLIO SECTION */
+section.portfolio-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.portfolio-container {
+  overflow: hidden;
+  margin-top: 1.5rem;
+  transition: 0.4s all;
+}
+.portfolio-container img {
+  background-size: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s all;
+}
+.portfolio-container:hover, .portfolio-container:focus {
+  box-shadow: 1px 4px grey;
+  transform: translate(0px, -10px);
+}
+
+section#contact {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+section#contact .address-contact p {
+  margin-bottom: 0px;
+  line-height: 2;
+}
+section#contact p {
+  color: white;
+}
+section#footer {
+  background: #4F4F4F;
+}
+
+p.lead {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 992px) {
+  ul.navbar-nav {
+    margin-left: auto;
+  }
+  .jumbotron {
+    padding: 100px 100px 100px 100px;
+  }
+  .jumbotron .my-name .my-description p {
+    font-size: 1.2rem;
+  }
+  section#contact {
+    padding: 0px 20px 50px 90px;
+  }
+  section#contact .title-contact {
+    padding-right: 150px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,229 @@
+/* variable */
+
+$primary-text: rgb(255, 255, 255);
+$secondary-text: rgb(151, 151, 151);
+$background-primary: #0a192f;
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.bg-transparent {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.z-index-99 {
+    z-index: 99 !important;
+}
+
+.btn-orange-outline {
+    border: 2px solid orange;
+    background: transparent;
+    color: #91733B;
+    &:hover {
+        color: white;
+        background: orange;
+    }
+}
+
+.fab,
+.fas {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.fab:hover {
+    color: #686868;
+}
+
+.font-bold{
+    font-weight: 800;
+}
+
+p.lead {
+    font-size: 1.1rem;
+    margin-bottom: .4rem;
+}
+
+body {
+    background: $background-primary;
+}
+
+// Navbar
+.navbar {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    & .navbar-brand {
+        color: rgb(255, 255, 255);
+    }
+    &.bg-grey {
+        background-color: rgba(128, 128, 128, 0.329);
+    }
+    ul.navbar-nav li.nav-item {
+        padding: 10px;
+        & a.nav-link {
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// jumbotron
+.jumbotron {
+    border-radius: 0px;
+    padding: 4rem 1.3rem;
+    background-color: transparent;
+    color: $primary-text;
+    top: 0;
+    height: 100%;
+    &.my-name {
+        & h2.my-name-text{
+            line-height: 2;
+        }
+        & p.about-my-name{
+            color: #4F4F4F;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        & .my-description p{
+            font-size: .9rem;
+        }
+        & p.glow-green {
+            color: #64ffda;
+            font-size: 16px;
+        }
+    }
+    & span.quotes {
+        font-style: italic;
+    }
+    h3 {
+        color: #6e6e6e;
+    }
+    & p {
+        font-size: 14px;
+    }
+}
+
+.jumbotron-container {
+    margin-top: 1rem;
+}
+
+
+/*SECTION SKILL*/
+
+section.skill {
+    h4 {
+        text-transform: uppercase;
+        color: white
+    }
+    & .list-skills ul {
+        list-style: none;
+        display: inline-block;
+        padding-left: 15px;
+        & li {
+            display: inline-block;
+            padding: 5px 5px 5px 5px;
+            & .btn-skills {
+                background-image: linear-gradient(to right, $background-primary, $background-primary 50%, #fff 50%);
+                background-size: 200% 100%;
+                border: 1px solid white;
+                font-size: 13px;
+                border-radius: 0;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: background-position 0.4s ease-in-out;
+                &:hover {
+                    background: white;
+                    color: $secondary-text;
+                    background-position: 100% 0;
+                }
+            }
+        }
+    }
+}
+
+.slide-option {
+    display: flex;
+    flex-flow: nowrap;
+    overflow-x: scroll;
+    padding-bottom: .7rem;
+    padding-top: 1rem;
+    .logo-skill {
+        border: 2px solid grey;
+    }
+    &::-webkit-scrollbar,
+    &::-moz-scrollbar {
+        display: none;
+    }
+}
+
+
+/* PORTFOLIO SECTION */
+
+section.portfolio-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.portfolio-container {
+    overflow: hidden;
+    margin-top: 1.5rem;
+    transition: .4s all;
+    img {
+        background-size: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        transition: .4s all;
+    }
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px grey;
+        transform: translate(0px, -10px);
+    }
+}
+
+section {
+    &#contact {
+        & .address-contact p{
+            margin-bottom: 0px;
+            line-height: 2;
+        }
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        p {
+            color: white;
+        }
+    }
+    &#footer {
+        background: #4F4F4F;
+    }
+}
+
+p.lead {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 992px) {
+    ul.navbar-nav {
+        margin-left: auto;
+    }
+    .jumbotron {
+        padding: 100px 100px 100px 100px;
+        & .my-name{
+            & .my-description p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    //  SECTION CONTACT
+    section#contact {
+        padding: 0px 20px 50px 90px;
+        & .title-contact {
+            padding-right: 150px;
+        }
+    }
+}
