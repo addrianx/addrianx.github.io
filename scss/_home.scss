@@ -27,7 +27,7 @@ $background-primary: #0a192f;
 
 .fab,
 .fas {
-    font-size: 1rem;
+    font-size: .9rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     color: white;
@@ -68,6 +68,12 @@ body {
             text-transform: uppercase;
         }
     }
+    & .navbar-toggler{
+        color: rgb(0 0 0 / 48%);
+        border-color: rgb(255 255 255 / 59%);
+        border-radius: 0px;
+        border-width: medium;
+    }
 }
 
 // jumbotron
@@ -79,8 +85,9 @@ body {
     top: 0;
     height: 100%;
     &.my-name {
-        & h2.my-name-text{
-            line-height: 2;
+        & h2.my-name-title{
+            line-height: 1;
+            font-size: 1.7rem;
         }
         & p.about-my-name{
             color: #4F4F4F;

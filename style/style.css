@@ -23,7 +23,7 @@
 
 .fab,
 .fas {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: white;
@@ -64,6 +64,12 @@ body {
   font-weight: 600;
   text-transform: uppercase;
 }
+.navbar .navbar-toggler {
+  color: rgba(0, 0, 0, 0.48);
+  border-color: rgba(255, 255, 255, 0.59);
+  border-radius: 0px;
+  border-width: medium;
+}
 
 .jumbotron {
   border-radius: 0px;
@@ -73,8 +79,9 @@ body {
   top: 0;
   height: 100%;
 }
-.jumbotron.my-name h2.my-name-text {
-  line-height: 2;
+.jumbotron.my-name h2.my-name-title {
+  line-height: 1;
+  font-size: 1.7rem;
 }
 .jumbotron.my-name p.about-my-name {
   color: #4F4F4F;
