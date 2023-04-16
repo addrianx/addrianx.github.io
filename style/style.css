@@ -180,13 +180,10 @@ section#contact .address-contact p {
 }
 section#contact p {
   color: white;
+  font-size: 0.9rem;
 }
 section#footer {
   background: #4F4F4F;
-}
-
-p.lead {
-  font-size: 1.1rem;
 }
 
 @media (min-width: 992px) {
